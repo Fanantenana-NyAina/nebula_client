@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NEBULA",
+  title: "NEBULA - Login Page",
   description: "A futuristic gallery of rare digital objects.",
 };
 
