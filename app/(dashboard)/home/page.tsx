@@ -1,9 +1,5 @@
-import HeroSection from "@/app/components/home/HeroSection";
+import HomeInterface from "@/app/components/home/HomeInterface";
 
 export default function HomePage() {
-  return (
-    <div>
-      <HeroSection />
-    </div>
-  );
+  return <HomeInterface />;
 }
