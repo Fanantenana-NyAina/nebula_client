@@ -14,8 +14,15 @@ export default function LoginPage() {
         />
       </div>
       <div className="containerOfTheCard relative w-full h-full flex justify-center items-center">
-        <div className="Card w-full max-w-md p-10 rounded-4xl border border-white/10 bg-white/4 backdrop-blur-2xl shadow-2xl flex flex-col">
+        <div className="pb-12 Card w-full max-w-md p-10 rounded-4xl border border-white/10 bg-white/4 backdrop-blur-2xl shadow-2xl flex flex-col">
           <div className="cardContentTop flex justify-center items-center flex-col text-white">
+            <Image
+              src="/MATCHUP_LOGO.png"
+              alt="Logo_G"
+              width={80}
+              height={25}
+              priority
+            />
             <h1 className=" text-center text-4xl font-semibold tracking-[0.3em] uppercase mb-2">
               MATCHUP
             </h1>
