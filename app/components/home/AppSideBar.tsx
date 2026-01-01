@@ -8,7 +8,7 @@ import {
   CircleDot,
   Layers,
   LogOut,
-  User
+  User,
 } from "lucide-react";
 
 import {
@@ -24,6 +24,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import Link from "next/link";
+import Image from "next/image";
 
 export function AppSidebar() {
   const myGroups = [
@@ -34,10 +35,14 @@ export function AppSidebar() {
   return (
     <Sidebar className="border-r border-white/5 bg-black/50 backdrop-blur-xl">
       <SidebarHeader className="h-16 flex items-center px-6 border-b border-white/5">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 bg-cyan-500 rounded-lg flex items-center justify-center">
-            <Layers className="text-black w-5 h-5" />
-          </div>
+        <div className="flex items-center justify-center gap-1">
+          <Image
+            src="/MATCHUP_LOGO.png"
+            alt="Logo_G"
+            width={50}
+            height={40}
+            priority
+          />
           <h1 className="tracking-[0.2em] text-[1.1rem] font-black text-white">
             MATCHUP
           </h1>
@@ -111,7 +116,7 @@ export function AppSidebar() {
                   <span>Settings</span>
                 </SidebarMenuButton>
                 <SidebarMenuButton className="text-white/70 hover:text-white hover:bg-white/5">
-                  <User className="w-4 h-4"/>
+                  <User className="w-4 h-4" />
                   <span>Profile</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>
